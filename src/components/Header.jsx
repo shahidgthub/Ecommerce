@@ -13,10 +13,10 @@ import Navigation from './Navigation';
 const Header = () => {
   return (
     <>
-    <header>
+    <header className='container mx-auto'>
       {/* Top Strip */}
-      <div className='top-strip py-2 border-t border-b border-gray-300'>
-        <div className='container mx-auto'>
+      <div className='top-strip py-2 border-t border-b border-gray-300 mt-2'>
+        <div className=''>
           <div className='flex items-center justify-between'>
             <div className='w-[50%]'>
               <p className='text-[14px] font-semibold'>
@@ -44,14 +44,14 @@ const Header = () => {
       {/* Main Header */}
       <div className='header py-4 shadow-sm'>
         <div className='container mx-auto flex items-center justify-between'>
-          <div className='text-xl font-bold w-[30%] '>
+          <div className=' col-1 text-xl font-bold w-[30%] '>
             <Link to="/">Ecommerce</Link>
           </div>
-          <div className='col2  w-[45%]'>
+          <div className='col-2  w-[45%]'>
             {/* Future nav / search / etc. */}
             <Search/>
           </div>
-          <div className='col3 w-[30%] flex items-center pl-7'>
+          <div className='col-3 w-[30%] flex items-center justify-end'>
           <ul className='flex items-center gap-6'>
   {/* Login & Register in one list item */}
   <li className='list-none '>
