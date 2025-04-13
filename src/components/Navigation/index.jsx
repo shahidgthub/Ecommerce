@@ -53,7 +53,7 @@ const Navigation = () => {
                 </button>
 
                 {isFashionOpen && (
-                  <div className='absolute top-full left-0 mt-2 bg-white shadow-lg p-4 grid grid-cols-1 gap-6 min-w-[200px]'>
+                  <div className='absolute top-full left-0 mt-2 bg-white shadow-lg p-4 grid grid-cols-1 gap-6 min-w-[100px]'>
                     <ul className='space-y-2'>
                       <li><Link to='/fashion/mens' className='hover:text-orange-500 text-sm'>Mens</Link></li>
                       <li><Link to='/fashion/womens' className='hover:text-orange-500 text-sm'>Womens</Link></li>
