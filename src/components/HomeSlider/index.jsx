@@ -6,16 +6,38 @@ import 'swiper/css/navigation';
 
 const HomeSlider = () => {
   return (
-    <div className='container mx-auto'>
+    <div className="container mx-auto py-6">
       <Swiper
         modules={[Navigation]}
         navigation
-        spaceBetween={50}
+        spaceBetween={30}
         slidesPerView={1}
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide className="border">
+          <img
+            src="/images/ecommerce.jpg" // ✅ from public folder
+            alt="Ecommerce Slide"
+            className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover" // Responsive height
+          />
+        </SwiperSlide>
+        <SwiperSlide className="border">
+          <div className="h-full flex items-center justify-center">
+            <img
+              src="/images/imageecommerce.jpg" // ✅ from public folder
+              alt="Ecommerce Slide"
+              className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover" // Responsive height
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="border">
+          <div className="h-full flex items-center justify-center">
+            <img
+              src="/images/ecommerce2.jpg" // ✅ from public folder
+              alt="Ecommerce Slide"
+              className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover" // Responsive height
+            />
+          </div>
+        </SwiperSlide>
       </Swiper>
     </div>
   );
