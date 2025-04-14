@@ -45,7 +45,7 @@ const Header = () => {
       <div className='header py-4 shadow-sm'>
         <div className='container mx-auto flex items-center justify-between'>
           <div className=' col-1 text-xl font-bold w-[30%] '>
-            <Link to="/">Ecommerce</Link>
+            <Link to="/"><img src='https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/logo-1691412328.jpg'/></Link>
           </div>
           <div className='col-2  w-[45%]'>
             {/* Future nav / search / etc. */}

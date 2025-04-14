@@ -99,9 +99,53 @@ const CategoryPanel = ({ isOpen, setIsOpen }) => {
                     </li>
                   </>
                 )}
+                
+              
               </ul>
             )}
           </li>
+          <ul className='px-2 space-y-4'>
+                  <li className='list-none'>
+                  <Link to='' className='text-[14px] font-semibold hover:text-orange-500'>jewelleries</Link>
+                  </li>
+                  <li className='list-none'>
+                  <Link to='' className='text-[14px] font-semibold hover:text-orange-500'>Watches</Link>
+                  </li>
+                  <li className='list-none'>
+                  <Link to='' className='text-[14px] font-semibold hover:text-orange-500'>Outwear </Link>
+                  </li>
+                  <li className='list-none'>
+                  <Link to='' className='text-[14px] font-semibold hover:text-orange-500'>Cosemtic</Link>
+                  </li>
+                  <li className='list-none'>
+                  <Link to='' className='text-[14px] font-semibold hover:text-orange-500'>Accessories</Link>
+                  </li>
+                  <li className='list-none'>
+                  <Link to='' className='text-[14px] font-semibold hover:text-orange-500'>Electronic</Link>
+                  </li>
+                  <li className='list-none'>
+                  <Link to='' className='text-[14px] font-semibold hover:text-orange-500'>Furniture</Link>
+                  </li>
+                  <li className='list-none'>
+                  <Link to='' className='text-[14px] font-semibold hover:text-orange-500'>Sun glasses</Link>
+                  </li>
+                  <li className='list-none'>
+                  <Link to='' className='text-[14px] font-semibold hover:text-orange-500'>Rolling diamond</Link>
+                  </li>
+                  <li className='list-none'>
+                  <Link to='' className='text-[14px] font-semibold hover:text-orange-500'>Xbox Controller</Link>
+                  </li>
+                  <li className='list-none'>
+                  <Link to='' className='text-[14px] font-semibold hover:text-orange-500'>leather Watch</Link>
+                  </li>
+                  <li className='list-none'>
+                  <Link to='' className='text-[14px] font-semibold hover:text-orange-500'>Smart Tablet</Link>
+                  </li>
+                  <li className='list-none'>
+                  <Link to='' className='text-[14px] font-semibold hover:text-orange-500'>Purse</Link>
+                  </li>
+                </ul>
+                
         </ul>
       </div>
     </Box>

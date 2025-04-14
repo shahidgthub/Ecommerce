@@ -4,6 +4,10 @@ import { Navigation } from 'swiper/modules'; // include Navigation module
 import 'swiper/css';
 import 'swiper/css/navigation'; // ✅ include navigation styles
 import 'swiper/css/pagination';
+import { IoIosStarOutline } from "react-icons/io";
+import { MdKeyboardArrowDown } from "react-icons/md";
+
+
 
 const Homecartslider = () => {
   return (
@@ -22,79 +26,130 @@ const Homecartslider = () => {
             spaceBetween: 30,
           },
           1024: {
-            slidesPerView: 5,
-            spaceBetween: 40,
+            slidesPerView: 6,
+            spaceBetween: 10,
           },
         }}
         modules={[Navigation]}
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className='p-3 bg-white rounded-sm shadow'>
-            <img
-              src='https://m.media-amazon.com/images/I/7134QsQw0dL._AC_UL320_.jpg'
-              alt="Product"
-              className='w-full h-auto object-contain'
-            />
-          </div>
-        </SwiperSlide>
+  <div className="bg-white h-[180px] w-[180px] flex flex-col items-center justify-center rounded shadow">
+    <img
+      src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_categoryimagelist/views/img/11-cz_categoryimagelist.jpg"
+      alt="Smart Tablet"
+      className="w-[110px] h-[110px] object-contain mb-2"
+    />
+    <h1 className="text-center text-sm font-semibold">Smart Tablet</h1>
+  </div>
+</SwiperSlide>
+<SwiperSlide>
+  <div className="bg-white h-[180px] w-[180px] flex flex-col items-center justify-center rounded shadow">
+    <img
+      src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_categoryimagelist/views/img/12-cz_categoryimagelist.jpg"
+      alt="Smart Tablet"
+      className="w-[110px] h-[110px] object-contain mb-2"
+    />
+    <h1 className="text-center text-sm font-semibold">
 
-        {/* Add more slides if needed */}
-        <SwiperSlide>
-          <div className='p-3 bg-white rounded-sm shadow'>
-            <img
-              src='https://m.media-amazon.com/images/I/41HHATpAemL._AC_UL320_.jpg'
-              alt="Product"
-              className='w-full h-auto object-contain'
-            />
-          </div>
-        </SwiperSlide>
+Crepe T-Shirt</h1>
+  </div>
+</SwiperSlide>
+<SwiperSlide>
+  <div className="bg-white h-[180px] w-[180px] flex flex-col items-center justify-center rounded shadow">
+    <img
+      src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_categoryimagelist/views/img/13-cz_categoryimagelist.jpg"
+      alt="Smart Tablet"
+      className="w-[110px] h-[110px] object-contain mb-2"
+    />
+    <h1 className="text-center text-sm font-semibold">
 
-        <SwiperSlide>
-          <div className='p-3 bg-white rounded-sm shadow'>
-            <img
-              src='https://m.media-amazon.com/images/I/61DoaHzLngL._AC_UL320_.jpg'
-              alt="Product"
-              className='w-full h-auto object-contain'
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className='p-3 bg-white rounded-sm shadow'>
-            <img
-              src='https://m.media-amazon.com/images/I/812e+u9IvaL._AC_UL320_.jpg'
-              alt="Product"
-              className='w-full h-auto object-contain'
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className='p-3 bg-white rounded-sm shadow'>
-            <img
-              src='https://m.media-amazon.com/images/I/812e+u9IvaL._AC_UL320_.jpg'
-              alt="Product"
-              className='w-full h-auto object-contain'
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className='p-3 bg-white rounded-sm shadow'>
-            <img
-              src='https://m.media-amazon.com/images/I/81q-zIZcWkL._AC_UL320_.jpg'
-              alt="Product"
-              className='w-full h-auto object-contain'
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className='p-3 bg-white rounded-sm shadow'>
-            <img
-              src='https://m.media-amazon.com/images/I/71zVzFkWbeL._AC_UL320_.jpg'
-              alt="Product"
-              className='w-full h-auto object-contain'
-            />
-          </div>
-        </SwiperSlide>
+    
+leather watch</h1>
+  </div>
+</SwiperSlide>
+<SwiperSlide>
+  <div className="bg-white h-[180px] w-[180px] flex flex-col items-center justify-center rounded shadow">
+    <img
+      src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_categoryimagelist/views/img/14-cz_categoryimagelist.jpg"
+      alt="Smart Tablet"
+      className="w-[110px] h-[110px] object-contain mb-2"
+    />
+    <h1 className="text-center text-sm font-semibold">
+
+    
+Rolling Diamond</h1>
+  </div>
+</SwiperSlide>
+<SwiperSlide>
+  <div className="bg-white h-[180px] w-[180px] flex flex-col items-center justify-center rounded shadow">
+    <img
+      src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_categoryimagelist/views/img/15-cz_categoryimagelist.jpg"
+      alt="Smart Tablet"
+      className="w-[110px] h-[110px] object-contain mb-2"
+    />
+    <h1 className="text-center text-sm font-semibold">
+
+    
+Wooden Chair</h1>
+  </div>
+</SwiperSlide>
+<SwiperSlide>
+  <div className="bg-white h-[180px] w-[180px] flex flex-col items-center justify-center rounded shadow">
+    <img
+      src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_categoryimagelist/views/img/16-cz_categoryimagelist.jpg"
+      alt="Smart Tablet"
+      className="w-[110px] h-[110px] object-contain mb-2"
+    />
+    <h1 className="text-center text-sm font-semibold">
+
+    
+Snacker Shoes</h1>
+  </div>
+</SwiperSlide>
+<SwiperSlide>
+  <div className="bg-white h-[180px] w-[180px] flex flex-col items-center justify-center rounded shadow">
+    <img
+      src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_categoryimagelist/views/img/17-cz_categoryimagelist.jpg"
+      alt="Smart Tablet"
+      className="w-[110px] h-[110px] object-contain mb-2"
+    />
+    <h1 className="text-center text-sm font-semibold">
+
+    
+Purse</h1>
+  </div>
+</SwiperSlide>
+<SwiperSlide>
+  <div className="bg-white h-[180px] w-[180px] flex flex-col items-center justify-center rounded shadow">
+    <img
+      src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_categoryimagelist/views/img/18-cz_categoryimagelist.jpg"
+      alt="Smart Tablet"
+      className="w-[110px] h-[110px] object-contain mb-2"
+    />
+    <h1 className="text-center text-sm font-semibold">
+
+    
+Xbox Controlle</h1>
+  </div>
+</SwiperSlide>
+<SwiperSlide>
+  <div className="bg-white h-[180px] w-[180px] flex flex-col items-center justify-center rounded shadow">
+    <img
+      src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_categoryimagelist/views/img/17-cz_categoryimagelist.jpg"
+      alt="Smart Tablet"
+      className="w-[110px] h-[110px] object-contain mb-2"
+    />
+    <h1 className="text-center text-sm font-semibold">
+
+    
+Purse</h1>
+  </div>
+</SwiperSlide>
+
+
+
+        
 
       </Swiper>
     </div>
