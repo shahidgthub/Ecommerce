@@ -13,111 +13,89 @@ import Navigation from './Navigation';
 const Header = () => {
   return (
     <>
-    <header className='container mx-auto'>
-      {/* Top Strip */}
-      <div className='top-strip py-2 border-t border-b border-gray-300 mt-2'>
-        <div className=''>
-          <div className='flex items-center justify-between'>
-            <div className='w-[50%]'>
-              <p className='text-[14px] font-semibold'>
-                Get up to 50% off new season style – limited time only
-              </p>
-            </div>
-            <div className='flex justify-end items-center py-2'>
-              <ul className='flex items-center gap-4'>
-                <li className='list-none'>
-                  <Link to="/help-center" className='text-[14px] hover:text-orange-500 font-semibold'>
-                    Help Center
-                  </Link>
-                </li>
-                <li className='list-none'>
-                  <Link to="/order-tracking" className='text-[14px] hover:text-orange-500 font-semibold'>
-                    Order Tracking
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    <header className="container mx-auto px-4">
+  {/* Top Strip */}
+  <div className="top-strip py-2 border-t border-b border-gray-300 mt-2">
+    <div className="flex flex-col md:flex-row items-center justify-between text-center md:text-left">
+      <p className="text-[14px] font-semibold w-full md:w-auto">
+        Get up to 50% off new season style – limited time only
+      </p>
+      <ul className="flex items-center gap-4 mt-2 md:mt-0">
+        <li>
+          <Link to="/help-center" className="text-[14px] hover:text-orange-500 font-semibold">
+            Help Center
+          </Link>
+        </li>
+        <li>
+          <Link to="/order-tracking" className="text-[14px] hover:text-orange-500 font-semibold">
+            Order Tracking
+          </Link>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  {/* Main Header */}
+  <div className="header py-4 shadow-sm">
+    <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+      
+      {/* Logo */}
+      <div className="w-full md:w-[30%] text-center md:text-left">
+        <Link to="/">
+          <img
+            src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/logo-1691412328.jpg"
+            className="mx-auto md:mx-0 max-h-[60px]"
+            alt="Logo"
+          />
+        </Link>
       </div>
 
-      {/* Main Header */}
-      <div className='header py-4 shadow-sm'>
-        <div className='container mx-auto flex items-center justify-between'>
-          <div className=' col-1 text-xl font-bold w-[30%] '>
-            <Link to="/"><img src='https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/logo-1691412328.jpg'/></Link>
-          </div>
-          <div className='col-2  w-[45%]'>
-            {/* Future nav / search / etc. */}
-            <Search/>
-          </div>
-          <div className='col-3 w-[30%] flex items-center justify-end'>
-          <ul className='flex items-center gap-6'>
-  {/* Login & Register in one list item */}
-  <li className='list-none '>
-    <Link to="/login" className='text-[16px] font-semibold hover:text-orange-500'>Login</Link>
-    <span>|</span>
-    <Link to="/register" className='text-[16px] font-semibold hover:text-orange-500'>Register</Link>
-  </li>
-
-  {/* Cart icon in a separate list item */}
-  
-  <li className='list-none'>
-  <Tooltip title="Compare">
-    <Badge
-      badgeContent={4}
-      sx={{
-        '& .MuiBadge-badge': {
-          backgroundColor: '#f97316', // Tailwind's orange-500
-
-          color: 'white', // optional: color of the number
-        }
-      }}
-    >
-      <IoIosGitCompare className='text-[20px] text-gray-700 hover:text-orange-500 cursor-pointer' />
-    </Badge>
-  </Tooltip>
-</li>
-
-<Tooltip title="Wishlist">
-  <li className='list-none'>
-    <Badge
-      badgeContent={4}
-      sx={{
-        '& .MuiBadge-badge': {
-          backgroundColor: '#f97316', // Tailwind's orange-500
-          color: 'white',
-        },
-      }}
-    >
-      <FaCartPlus className='text-[20px] text-gray-700 hover:text-orange-500 cursor-pointer' />
-    </Badge>
-  </li>
-</Tooltip>
-
-<Tooltip title="Cart">
-  <li className='list-none'>
-    <Badge
-      badgeContent={4}
-      sx={{
-        '& .MuiBadge-badge': {
-          backgroundColor: '#f97316', // Tailwind's orange-500
-          color: 'white',
-        },
-      }}
-    >
-      <FaRegHeart className='text-[20px] text-gray-700 hover:text-orange-500 cursor-pointer' />
-    </Badge>
-  </li>
-</Tooltip>
-
- 
-</ul>
-          </div>
-        </div>
+      {/* Search */}
+      <div className="w-full md:w-[45%]">
+        <Search />
       </div>
-      <Navigation/>
-    </header>
+
+      {/* Icons and Auth Links */}
+      <div className="w-full md:w-[25%] flex justify-center md:justify-end">
+        <ul className="flex items-center justify-center gap-4 flex-wrap">
+          <li>
+            <Link to="/login" className="text-[16px] font-semibold hover:text-orange-500">Login</Link>
+            <span className="mx-1">|</span>
+            <Link to="/register" className="text-[16px] font-semibold hover:text-orange-500">Register</Link>
+          </li>
+
+          <li>
+            <Tooltip title="Compare">
+              <Badge badgeContent={2} sx={{ '& .MuiBadge-badge': { backgroundColor: '#f97316', color: 'white' } }}>
+                <IoIosGitCompare className="text-[26px] text-gray-700 hover:text-orange-500 cursor-pointer" />
+              </Badge>
+            </Tooltip>
+          </li>
+
+          <li>
+            <Tooltip title="Wishlist">
+              <Badge badgeContent={1} sx={{ '& .MuiBadge-badge': { backgroundColor: '#f97316', color: 'white' } }}>
+                <FaCartPlus className="text-[26px] text-gray-700 hover:text-orange-500 cursor-pointer" />
+              </Badge>
+            </Tooltip>
+          </li>
+
+          <li>
+            <Tooltip title="Cart">
+              <Badge badgeContent={3} sx={{ '& .MuiBadge-badge': { backgroundColor: '#f97316', color: 'white' } }}>
+                <FaRegHeart className="text-[26px] text-gray-700 hover:text-orange-500 cursor-pointer" />
+              </Badge>
+            </Tooltip>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  {/* Navigation */}
+  <Navigation />
+</header>
+
    
     </>
   )

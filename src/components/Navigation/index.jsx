@@ -23,7 +23,7 @@ const Navigation = () => {
           <div className='w-full sm:w-auto p-2'>
             <button
               onClick={openCatPanel}
-              className='text-black font-bold w-full flex items-center justify-between py-2 rounded-md hover:bg-orange-300'
+              className='text-black font-bold lg:w-full flex items-center justify-between py-2 rounded-md hover:bg-orange-300'
             >
               <div className='flex items-center gap-4'>
                 <CgMenuRightAlt className='text-[18px] mt-1' />
@@ -35,7 +35,7 @@ const Navigation = () => {
 
           {/* Center: Navigation Links */}
           <div className='w-full sm:w-auto'>
-            <ul className='flex flex-wrap gap-6 p-4'>
+            <ul className='lg:flex flex-wrap gap-6 p-4 hidden'>
 
               <li>
                 <Link to='/' className='hover:text-orange-500 text-[14px] font-semibold'>

@@ -1,10 +1,14 @@
 import React from 'react';
 import HomeSlider from '../../HomeSlider';
 import Homecartslider from '../../Homecartslider';
+import { TbTruckDelivery } from "react-icons/tb";
+import AdsBannerSlider from '../../AdsBannerSlider';
+
 
 const Home = () => {
   return (
-    <div className="font-semibold bg-orange-50 min-h-screen">
+    <>
+    <div className="font-semibold bg-orange-50 py-6">
       <div className="container mx-auto">
         {/* Slider + Banners section */}
         <div className="flex flex-col lg:flex-row justify-between gap-4 lg:flex-nowrap flex-wrap">
@@ -62,6 +66,26 @@ const Home = () => {
         </div>
       </div>
     </div>
+    {/* new section */}
+    <section className='bg-white p-6 pt-10 '>
+      <div className='container mx-auto'>
+        <div className='w-full freeshiping p-4 border-2 border-red-500 justify-between flex lg:flexno-wrap flex-wrap lg:items-start items-center'>
+          <div className='item-center flex gap-5'>
+            <TbTruckDelivery className='text-[32px]'/>
+            <span className='text-2xl font-bold'>Free Shipping</span>
+          </div>
+          <div><p className='text-[16px] font-semibold'>Free Delivery Now On Your First Order and over $200</p></div>
+<p className='text-[18px] font-bold'>- Only $200*</p>
+        </div> 
+
+      </div>
+
+    </section>
+    {/* Banner */}
+    <section className='container mx-auto  bg-gray-100'>
+    <AdsBannerSlider/>
+    </section>
+    </>
   );
 };
 
