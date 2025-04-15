@@ -3,9 +3,19 @@ import HomeSlider from '../../HomeSlider';
 import Homecartslider from '../../Homecartslider';
 import { TbTruckDelivery } from "react-icons/tb";
 import AdsBannerSlider from '../../AdsBannerSlider';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Box from '@mui/material/Box';
+import ProductSlider from '../../ProductSlider';
 
 
 const Home = () => {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+  
   return (
     <>
     <div className="font-semibold bg-orange-50 py-6">
@@ -66,10 +76,45 @@ const Home = () => {
         </div>
       </div>
     </div>
-    {/* new section */}
-    <section className='bg-white p-6 pt-10 '>
-      <div className='container mx-auto'>
-        <div className='w-full freeshiping p-4 border-2 border-red-500 justify-between flex lg:flexno-wrap flex-wrap lg:items-start items-center'>
+     {/* product data */}
+     <section className='container mx-auto  py-8'>
+        <div className='flex items-center justify-between'>
+          <div className='left'>
+          <h1 className='text-[20px] font-bold'> Populars Products</h1>
+          <p className='text-[20px] font-semibold'>Do not miss the current offer untill the end of March</p>
+
+      </div>
+      <div className='right w-[60%]'>
+      <Tabs
+        value={value}
+        onChange={handleChange}
+        variant="scrollable"
+        scrollButtons
+        allowScrollButtonsMobile
+        aria-label="scrollable force tabs example"
+      >
+        <Tab label="Fashion" />
+        <Tab label=" Electronic" />
+        <Tab label="Bags" />
+        <Tab label="Footwear " />
+        <Tab label="Grocerie" />
+        <Tab label="Beauty " />
+        <Tab label="Wealness" />
+        <Tab label="Jewellery" />
+        <Tab label="Item Four" />
+        <Tab label="Item Five" />
+        <Tab label="Item Six" />
+        <Tab label="Item Seven" />
+        
+      </Tabs>
+      </div>
+      </div>
+    </section>
+    <ProductSlider/>
+    {/* new section border inside data*/}
+    <section className='bg-white p-16 pt-10 '>
+      <div className='container mx-auto w-[70%] m-auto'>
+        <div className='w-full freeshiping p-6 border-2 border-red-500 justify-between flex lg:flexno-wrap flex-wrap lg:items-start items-center'>
           <div className='item-center flex gap-5'>
             <TbTruckDelivery className='text-[32px]'/>
             <span className='text-2xl font-bold'>Free Shipping</span>
@@ -81,6 +126,7 @@ const Home = () => {
       </div>
 
     </section>
+   
     {/* Banner */}
     <section className='container mx-auto  bg-gray-100'>
     <AdsBannerSlider/>
