@@ -59,10 +59,14 @@ const Header = () => {
       <div className="w-full md:w-[25%] flex justify-center md:justify-end">
         <ul className="flex items-center justify-center gap-4 flex-wrap">
           <li>
-            <Link to="/login" className="text-[16px] font-semibold hover:text-orange-500">Login</Link>
+            <Link to="/login" className="text-[16px] font-semibold hover:text-orange-500">Login 
+ 
+</Link>
             <span className="mx-1">|</span>
             <Link to="/register" className="text-[16px] font-semibold hover:text-orange-500">Register</Link>
           </li>
+    
+         
 
           <li>
             <Tooltip title="Compare">

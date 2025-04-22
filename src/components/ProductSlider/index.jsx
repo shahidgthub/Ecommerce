@@ -22,7 +22,7 @@ const ProductSlider = () => {
       >
         <SwiperSlide>
           <div className="max-w-[220px] w-full mx-auto">
-            <ProductItem title="Product 1" image="/images/p1.jpg" />
+            <ProductItem/>
           </div>
         </SwiperSlide>
         
