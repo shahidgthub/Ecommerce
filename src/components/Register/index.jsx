@@ -5,11 +5,30 @@ import { Link } from 'react-router-dom';
 const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [message, setMessage] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Add registration logic (e.g., API call to register a new user)
-    alert('Registered successfully');
+
+    try {
+      const res = await fetch('http://localhost:5000/api/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        setMessage('✅ Registered successfully!');
+      } else {
+        setMessage(` ${data.message}`);
+      }
+    } catch (err) {
+      setMessage('Registration failed. Please try again.');
+    }
   };
 
   return (
@@ -41,6 +60,7 @@ const Register = () => {
               required
             />
           </div>
+          {message && <Typography color="error">{message}</Typography>}
           <Button type="submit" variant="contained" color="primary" fullWidth>
             Register
           </Button>
