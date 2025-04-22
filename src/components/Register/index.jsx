@@ -49,6 +49,7 @@ const Register = () => {
               required
             />
           </div>
+
           <div style={{ marginBottom: '1rem' }}>
             <TextField
               label="Password"
@@ -60,11 +61,25 @@ const Register = () => {
               required
             />
           </div>
-          {message && <Typography color="error">{message}</Typography>}
+
+          {/* Forgot Password Link */}
+          <div style={{ marginBottom: '2rem', textAlign: 'center' }}>
+            <Link to="/forgotpassword" style={{ fontSize: '0.875rem' }}>
+              Forgot Password?
+            </Link>
+          </div>
+
+          {message && (
+            <Typography color="error" style={{ marginBottom: '1rem' }}>
+              {message}
+            </Typography>
+          )}
+
           <Button type="submit" variant="contained" color="primary" fullWidth>
             Register
           </Button>
         </form>
+
         <div style={{ marginTop: '1rem' }}>
           <Typography variant="body2">
             Already have an account? <Link to="/login">Login</Link>
