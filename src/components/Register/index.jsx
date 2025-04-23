@@ -62,12 +62,7 @@ const Register = () => {
             />
           </div>
 
-          {/* Forgot Password Link */}
-          <div style={{ marginBottom: '2rem', textAlign: 'center' }}>
-            <Link to="/forgotpassword" style={{ fontSize: '0.875rem' }}>
-              Forgot Password?
-            </Link>
-          </div>
+          
 
           {message && (
             <Typography color="error" style={{ marginBottom: '1rem' }}>

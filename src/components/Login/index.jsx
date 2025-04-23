@@ -56,7 +56,15 @@ const Login = () => {
             <Button type="submit" variant="contained" color="primary" fullWidth>
               Login
             </Button>
+
+            {/* Forgot Password Link */}
+            <div style={{ marginBottom: '5', textAlign: 'center' }}>
+                      <Link to="/forgotpassword" style={{ fontSize: '0.875rem' }}>
+                        Forgot Password?
+                      </Link>
+                    </div>
           </form>
+          
           <div style={{ marginTop: '1rem', textAlign: 'center' }}>
             <Typography variant="body2">
               Don’t have an account? <Link to="/register">Register</Link>
