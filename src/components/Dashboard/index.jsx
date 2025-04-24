@@ -5,10 +5,9 @@ import Main from '../Main';
 
 const Dashboard = () => {
   return (
-    <div className='container mx-auto'>
     <div className="flex h-screen">
       {/* Sidebar (always shown on the left) */}
-      <aside className="w-64   p-4 md:block hidden bg-white shadow-600  ">
+      <aside className="w-100   p-4 md:block hidden bg-white shadow-600  ">
         <Sidebar />
       </aside>
 
@@ -24,7 +23,6 @@ const Dashboard = () => {
           <Main />
         </main>
       </div>
-    </div>
     </div>
   );
 };
