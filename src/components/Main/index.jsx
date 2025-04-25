@@ -10,6 +10,7 @@ import { FaYoutube } from "react-icons/fa";
 import ProgressDashboard from '../ProgrssDashboard';
 import { FaCheckCircle } from "react-icons/fa";
 import Graph from '../Graph';
+// import Pagination from '../Pagination';
 
 
 
@@ -24,10 +25,10 @@ const Main = () => {
   return (
     <div>
       {/* section 1 */}
-<section className=" flex  gap-8">
-            <div className='w-[680px] h-[400px] bg-white rounded-lg'>
+<section className=" flex  gap-8 lg:flex-nowrap flex-wrap">
+            <div className='lg:w-[680px] md:w-[600px] w-[320px] h-[400px] bg-white rounded-lg'>
               <button className='text-white bg-green-600 p-2 px-2 mt-4 rounded-lg mx-3  font-semibold'> General Url</button>
-              <div className='flex gap-8 py-6 mx-6 mt-4'>
+              <div className='flex gap-8 py-6 mx-6 mt-4 lg:flex-nowrap flex-wrap'>
                 <div className='w-[200px] bg-green-300 flex flex-col items-center space-y-5 rounded-xl py-4'>
                <div className='w-[40px] h-[40px] bg-green-500 rounded-full flex items-center justify-center '>
  <FaAmericanSignLanguageInterpreting className='text-[24px] text-white'/>
@@ -65,7 +66,7 @@ const Main = () => {
               {/* <h1 className='text-2xl font-bold pt-4 px-3'>Progress</h1> */}
               
               <ProgressDashboard/>
-              
+              {/* <Pagination/> */}
               
             </div>
             
@@ -73,8 +74,8 @@ const Main = () => {
 
           {/* Section 2: Recent Activities */}
           <section className="mt-4">
-            <div className='flex gap-8'>
-            <div className='w-[680px] bg-white rounded-lg'>
+            <div className='flex gap-8 lg:flex-nowrap flex-wrap'>
+            <div className='lg:w-[680px] md:w-[600px] w-[320px] bg-white rounded-lg'>
               <div className='px-3'>
               <h1 className='text-xl font-semibold'>Task list</h1>
               <p className=' pt-3'> 
@@ -206,7 +207,7 @@ const Main = () => {
 </div>
 
             </div>
-            <div className='w-[680px] bg-white rounded-lg'>
+            <div className='lg:w-[680px] md:w-[600px] w-[320px] bg-white rounded-lg'>
               <Graph/>
             </div>
             </div>
