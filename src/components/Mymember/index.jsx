@@ -61,7 +61,7 @@ const Mymember = () => {
         </div>
 
         {/* Table Header */}
-        <div className="border flex justify-between py-2 px-4 mt-6 font-semibold text-gray-700">
+        <div className="border flex justify-between py-2 px-4 mt-6 font-semibold text-gray-700 mx-4">
           <div className="flex-1">First name</div>
           <div className="flex-1">Last name</div>
           <div className="flex-1">Email</div>
@@ -113,8 +113,67 @@ const Mymember = () => {
   </div>
 </div>
 
+<div className='flex justify-between px-6'>
+  <h1 className='text-xl font-bold'>Members not verified</h1>
+  <p>Please note that your friends are not verified, and you have not received any rewards.</p>
+  <div className='relative'>
+            <div className='absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none'>
+              <svg className='w-5 h-5 text-gray-400' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+                <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M21 21l-4.35-4.35m0 0A7.5 7.5 0 103.5 10.5a7.5 7.5 0 0013.65 6.15z' />
+              </svg>
+            </div>
+
+            <input
+              type='search'
+              placeholder='Search by name'
+              className='block w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent'
+            />
+          </div>
+          
+</div>
+<div className="border flex justify-between py-2 px-4 mt-6 font-semibold text-gray-700 mx-4">
+          <div className="flex-1">First name</div>
+          <div className="flex-1">Last name</div>
+          <div className="flex-1">JoinedDate</div>
+          <div className="flex-1">Email</div>
+          
+        </div>
+    <button 
+      className="flex items-center gap-1 bg-gray-200 px-4 py-2 rounded-md hover:bg-gray-300 transition mx-6 mt-8"
+      onClick={handleSubmit}
+    >
+      Show All
+      <MdOutlineKeyboardArrowDown size={20} />
+    </button>
+
+    {isOpen && (
+      <div className="w-[100px] top-14 bg-white p-4 mt-2 rounded-lg shadow border">
+        <p>Option 1</p>
+        <p>Option 2</p>
+        <p>Option 3</p>
+      </div>
+    )}
 
       </div>
+      {/* 3Let's grow together!
+ */}
+ <div className='mt-8 bg-white'>
+  <h1 className='pt-4 text-center text-2xl font-bold'>Let's grow together!
+  </h1>
+  <p className='text-lg px-6 pt-4 font-semibold'>Start inviting your friends and family today and watch your referral tree flourish. The more you grow, the more rewards you'll earn. Together, we can <br/>create a brighter future</p>
+ <h1 className='text-xl font-bold px-6 pt-6'>
+ Tips to help you:</h1>
+ <p className='pt-3 text-xl px-6'>1.Emphasizes community and growth: Focuses on the idea of building a strong and growing community together.
+ </p>
+ <p className='pt-3 text-xl px-6'>2.Highlights the benefits of referring: Explains how referring new members can contribute to the success of the platform and benefit the member personally.</p>
+ <p>
+ <p className='pt-3 text-xl px-6 '>3.Creates a sense of excitement and anticipation: Uses positive language and phrases to encourage members to take action.</p>
+ 
+</p>
+
+  <p className='pt-3 text-xl px-6'>4.Aligns with the Ecommerce brand story: Reinforces the themes of family, innovation, and empowerment.
+  </p>
+  </div>
     </>
   );
 }

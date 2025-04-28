@@ -9,6 +9,7 @@ import Resetpassword from './components/Resetpassword';
 import Dashboard from './components/Dashboard';
 import Myaccount from './components/Myaccount';
 import Mymember from './components/Mymember';
+import Myprofile from './components/Myprofile';
 
 function App() {
   return (
@@ -41,6 +42,8 @@ function AppContent() {
           {/* Nested routes inside dashboard */}
           <Route path="myaccount" element={<Myaccount />} />
           <Route path="mymember" element={<Mymember />} />
+          <Route path="myprofile" element={<Myprofile />} />
+
         </Route>
       </Routes>
     </>
