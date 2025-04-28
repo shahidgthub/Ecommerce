@@ -10,7 +10,7 @@ import { FaYoutube } from "react-icons/fa";
 import ProgressDashboard from '../ProgrssDashboard';
 import { FaCheckCircle } from "react-icons/fa";
 import Graph from '../Graph';
-// import Pagination from '../Pagination';
+import Pagination from '../Pagination';
 
 
 
@@ -66,7 +66,7 @@ const Main = () => {
               {/* <h1 className='text-2xl font-bold pt-4 px-3'>Progress</h1> */}
               
               <ProgressDashboard/>
-              {/* <Pagination/> */}
+              <Pagination/>
               
             </div>
             

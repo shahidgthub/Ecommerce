@@ -1,25 +1,30 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
-    <div>
- <aside className=" w-84 p-4   h-screen hidden md:block">
- <h1 className='text-2xl font-bold text-center '>Ecommerce</h1>
-
-          <nav className='flex justify-center pt-6'>
-            <ul className="space-y-8 text-2xl font-semibold">
-              <li><a href="#" className="hover:text-blue-400">My Account</a></li>
-              <li><a href="#" className="hover:text-blue-400">My Member </a></li>
-              <li><a href="#" className="hover:text-blue-400">My Profile</a></li>
-              <li><a href="#" className="hover:text-blue-400">Sign Out</a></li>
-              <li><a href="#" className="hover:text-blue-400">Support Issue</a></li>
-
-
-            </ul>
-          </nav>
-        </aside>      
+    <div className="w-84   min-h-screen p-4">
+      <h2 className="text-xl font-semibold mb-6 text-center">Ecommerce</h2>
+      <ul>
+        <li className="mb-4">
+          <Link
+            to="myaccount"
+            className="block py-2 px-4 rounded hover:bg-blue-600"
+          >
+            My Account
+          </Link>
+        </li>
+        <li className="mb-4">
+          <Link
+            to="mymember"
+            className="block py-2 px-4 rounded hover:bg-blue-600"
+          >
+            My Member
+          </Link>
+        </li>
+      </ul>
     </div>
-  )
-}
+  );
+};
 
-export default  Sidebar
+export default Sidebar;
