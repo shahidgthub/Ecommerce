@@ -10,6 +10,7 @@ import Dashboard from './components/Dashboard';
 import Myaccount from './components/Myaccount';
 import Mymember from './components/Mymember';
 import Myprofile from './components/Myprofile';
+import Signout from './components/Signout';
 
 function App() {
   return (
@@ -39,12 +40,14 @@ function AppContent() {
 
         {/* Dashboard main route */}
         <Route path="/dashboard" element={<Dashboard />}>
-          {/* Nested routes inside dashboard */}
-          <Route path="myaccount" element={<Myaccount />} />
-          <Route path="mymember" element={<Mymember />} />
-          <Route path="myprofile" element={<Myprofile />} />
+  <Route index element={<Myaccount />} /> {/* This makes Myaccount the default */}
+  <Route path="myaccount" element={<Myaccount />} />
+  <Route path="mymember" element={<Mymember />} />
+  <Route path="myprofile" element={<Myprofile />} />
+  <Route path="signout" element={<Signout />} />
 
-        </Route>
+</Route>
+
       </Routes>
     </>
   );
