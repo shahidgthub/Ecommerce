@@ -8,7 +8,7 @@ import { MdOutlineRememberMe } from "react-icons/md";
 const Sidebar = () => {
   return (
     <div className="w-84  min-h-screen p-4">
-      <h2 className="text-xl font-bold font-semibold mb-6 text-center">Ecommerce</h2>
+      <h2 className="text-2xl font-bold font-semibold mb-6 px-12">Ecommerce</h2>
       <ul className=''>
         <li className="mb-4 flex gap-6">
         <MdAccountCircle  className='text-[24px] mt-2'/>
