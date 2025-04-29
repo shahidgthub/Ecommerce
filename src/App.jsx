@@ -11,7 +11,7 @@ import Myaccount from './components/Myaccount';
 import Mymember from './components/Mymember';
 import Myprofile from './components/Myprofile';
 import Signout from './components/Signout';
-
+import Chatbox from './components/Chatbox';
 function App() {
   return (
     <BrowserRouter>
@@ -44,7 +44,10 @@ function AppContent() {
   <Route path="myaccount" element={<Myaccount />} />
   <Route path="mymember" element={<Mymember />} />
   <Route path="myprofile" element={<Myprofile />} />
+  <Route path="chatbox" element={<Chatbox />} />
+
   <Route path="signout" element={<Signout />} />
+
 
 </Route>
 

@@ -42,6 +42,16 @@ const Sidebar = () => {
         <li className="mb-8 text-lg font-bold">
           
           <Link
+            to="chatbox"
+            className="block py-2 px-4 rounded hover:bg-blue-600 text-lg font-bold"
+          >
+            ChatBox
+          </Link>
+        </li>
+        
+        <li className="mb-8 text-lg font-bold">
+          
+          <Link
             to="signout"
             className="block py-2 px-4 rounded hover:bg-blue-600 text-lg font-bold"
           >
